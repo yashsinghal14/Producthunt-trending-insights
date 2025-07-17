@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trending on Product Hunt</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <h1 class="mb-4">🚀 Top Trending Products on Product Hunt</h1>
+
+    {% for product in products %}
+      <div class="card bg-secondary text-white mb-3 shadow">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{{ product.url }}" class="text-warning text-decoration-none" target="_blank">{{ product.name }}</a>
+          </h4>
+          <p class="card-text">{{ product.tagline }}</p>
+          <p class="mb-1">
+            🔥 Upvotes: {{ product.votes }} | 💬 Comments: {{ product.comments }}
+          </p>
+          <p>
+            🏷️ Tags:
+            {% for tag in product.tags %}
+              <span class="badge bg-warning text-dark">{{ tag }}</span>
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
