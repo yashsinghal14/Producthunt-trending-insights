@@ -24,7 +24,7 @@ A simple Flask web app that fetches and displays top trending products from Prod
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/YOUR_USERNAME/producthunt-trending-insights.git
+git clone https://github.com/yashsinghal14/producthunt-trending-insights.git
 cd producthunt-trending-insights
 ```
 
