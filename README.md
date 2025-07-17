@@ -2,6 +2,9 @@
 
 A simple Flask web app that fetches and displays top trending products from Product Hunt using their GraphQL API.
 
+## 🌐 Live Demo
+🔗 **[View Live App](https://producthunt-trending-insights.onrender.com/)**
+
 ## 🔍 Features
 - Displays top 10 trending products
 - Shows:
